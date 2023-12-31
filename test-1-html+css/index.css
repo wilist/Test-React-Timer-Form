@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "DMSans-Bold";
+    src: url('./fonts/DMSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "DMSans-SemiBold";
+    src: url('./fonts/DMSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "DMSans-Medium";
+    src: url('./fonts/DMSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url('./fonts/DMSans-Regular.ttf');
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: "DMSans-Regular";
+    padding: 116px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1110px) {
+    body {
+        padding: 48px 40px;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.trow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    color: #0A0A0A;
+    text-align: center;
+    /* Web/Heading/XXL */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    letter-spacing: -1.44px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .header__title {
+        color: #0A0A0A;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 114.286% */
+        letter-spacing: -0.588px;
+    }
+}
+
+.header__subtitle {
+    color: #404040;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.198px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .header__subtitle {
+        color: #404040;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.176px;
+    }
+}
+
+.map-section {
+    width: 100%;
+    margin-top: 56px;
+}
+
+@media screen and (max-width: 800px) {
+    .map-section {
+        margin-top: 40px;
+    }
+}
+
+.map-section__image {
+    width: 100%;
+    min-width: 310px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: -208px;
+}
+
+@media screen and (max-width: 1110px) {
+    .card-list {
+        margin-top: 0;
+    }
+}
+
+.city-card {
+    max-width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(44, 59, 64, 0.15);
+    flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .city-card {
+        gap: 8px;
+        padding: 16px;
+    }
+}
+
+.city-card:nth-child(-n+2){
+    flex-basis: 40%;
+}
+
+.city-card__name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 114.286% */
+    letter-spacing: -0.588px;
+}
+
+@media screen and (max-width: 800px) {
+    .city-card__name {
+        color: #0A0A0A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.34px;
+    }
+}
+
+.city-card__phone {
+    color: #0A0A0A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.198px;
+}
+
+@media screen and (max-width: 800px) {
+    .city-card__phone {
+        color: #404040;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.176px;
+    }
+}
+
+.city-card__email {
+    color: #0A0A0A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.198px;
+}
+
+@media screen and (max-width: 800px) {
+    .city-card__email {
+        color: #404040;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.176px;
+    }
+}
+
+.city-card__address {
+    color: #9E9E9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.198px;
+}
+
+@media screen and (max-width: 800px) {
+    .city-card__address {
+        color: #9E9E9E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.176px;
+    }
+}
